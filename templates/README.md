@@ -12,7 +12,7 @@ One Column Layout
 * [Download Zipped Files]()
 
 Right Sidebar Layout
------------------
+--------------------
 
 *A two column layout with the sidebar on the right for a website.*
 
@@ -21,12 +21,12 @@ Right Sidebar Layout
 * [View Source Files](right-sidebar/)
 * [Download Zipped Files]()
 
-Fill Width Layout
+Full Width Layout
 -----------------
 
 *A full width layout with a sidebar for a website.*
 
-![Fill Width Layout Screenshot](screenshots/full-width.jpg)
+![Full Width Layout Screenshot](screenshots/full-width.jpg)
 
 * [View Source Files](full-width/)
 * [Download Zipped Files]()

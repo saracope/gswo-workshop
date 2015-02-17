@@ -1,154 +1,154 @@
 /*
-	Website Name: Right Sidebar Layout
-	Description: A two column layout with the sidebar on the right for a website.
-	Author(s): Your Name(s)...
+  Website Name: Right Sidebar Layout
+  Description: A two column layout with the sidebar on the right for a website.
+  Author(s): Your Name(s)...
 
 Contents
 ==============================================================
-	1. =Structure
-	2. =Elements
-	3. =Header
-	4. =Navigation
-	5. =Content
-	6. =Footer
-	7. =Media Queries
+  1. =Structure
+  2. =Elements
+  3. =Header
+  4. =Navigation
+  5. =Content
+  6. =Footer
+  7. =Media Queries
 */
 
 /* =Structure
 --------------------------------------------------------------*/
 body {
-	background-color: #ddd;
-	padding: 40px;
-	font-size: 16px;
-	line-height: 26px;
+  background-color: #ddd;
+  padding: 40px;
+  font-size: 16px;
+  line-height: 26px;
 }
 .site {
-	background-color: white;
-	max-width: 1000px;
-	margin: auto;
-	overflow: hidden;
+  background-color: white;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
 }
 
 /* =Elements
 --------------------------------------------------------------*/
 img {
-	max-width: 100%;
-	height: auto;
+  max-width: 100%;
+  height: auto;
 }
 h1, h2, h3, h4, h5, h6 {
-	margin: 0 0 26px;
+  margin: 0 0 26px;
 }
 p {
-	margin-bottom: 26px;
+  margin-bottom: 26px;
 }
 p:last-child {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 /* =Header
 --------------------------------------------------------------*/
 .site-header {
-	padding: 40px;
-	text-align: center;
+  padding: 40px;
+  text-align: center;
 }
 .site-title {
-	margin: 0;
+  margin: 0;
 }
 
 /* =Navigation
 --------------------------------------------------------------*/
 .site-navigation ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 .site-navigation li {
-	display: inline-block;
+  display: inline-block;
 }
 .site-navigation a {
-	display: block;
-	text-decoration: none;
-	font-weight: 700;
-	color: #000;
-	font-size: 20px;
-	padding: 0 20px;
+  display: block;
+  text-decoration: none;
+  font-weight: 700;
+  color: #000;
+  font-size: 20px;
+  padding: 0 20px;
 }
 .site-navigation a:hover {
-	color: #4cacbe;
+  color: #4cacbe;
 }
 
 /* =Content
 --------------------------------------------------------------*/
 .content-wrapper {
-	padding: 40px;
+  padding: 40px;
 }
 .site-content {
-	padding-bottom: 40px;
-	border-bottom: 1px dotted #999;
+  padding-bottom: 40px;
+  border-bottom: 1px dotted #999;
 }
 .sidebar {
-	padding-top: 40px;
-	font-size: 13px;
-	line-height: 21px;
-	text-align: center;
+  padding-top: 40px;
+  font-size: 13px;
+  line-height: 21px;
+  text-align: center;
 }
 .widget {
-	padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 /* =Footer
 --------------------------------------------------------------*/
 .site-footer {
-	background-color: #333;
-	color: white;
-	overflow: hidden;
-	padding: 40px;
+  background-color: #333;
+  color: white;
+  overflow: hidden;
+  padding: 40px;
 }
 
 /* =Media Queries
 --------------------------------------------------------------*/
 @media screen and (min-width: 800px) {
-	/* =Header */
-	.site-title {
-		float: left;
-	}
+  /* =Header */
+  .site-title {
+    float: left;
+  }
 
-	/* =Navigation */
-	.site-navigation {
-		float: right;
-	}
-	.site-navigation a {
-		padding: 0 0 0 20px;
-	}
+  /* =Navigation */
+  .site-navigation {
+    float: right;
+  }
+  .site-navigation a {
+    padding: 0 0 0 20px;
+  }
 
-	/* =Content */
-	.site-content {
-		width: 70%;
-		float: left;
-		border: none;
-	}
-	.sidebar {
-		width: 30%;
-		float: left;
-		padding-top: 0;
-		text-align: left;
-	}
-	.widget {
-		padding-left: 20px;
-	}
+  /* =Content */
+  .site-content {
+    width: 70%;
+    float: left;
+    border: none;
+  }
+  .sidebar {
+    width: 30%;
+    float: left;
+    padding-top: 0;
+    text-align: left;
+  }
+  .widget {
+    padding-left: 20px;
+  }
 
-	/* =Footer */
-	.site-footer {
-		clear: both;
-	}
-	.site-footer .column {
-		width: 32%;
-		float: left;
-		padding-right: 2%;
-	}
-	.site-footer .column.last {
-		padding-right: 0;
-	}
+  /* =Footer */
+  .site-footer {
+    clear: both;
+  }
+  .site-footer .column {
+    width: 32%;
+    float: left;
+    padding-right: 2%;
+  }
+  .site-footer .column.last {
+    padding-right: 0;
+  }
 }
 
 /* Crafted with love at Sparkbox */
