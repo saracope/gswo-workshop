@@ -1,0 +1,142 @@
+/*
+	Website Name: Full Width Layout
+	Description: A full width layout with a sidebar for a website.
+	Author(s): Your Name(s)...
+
+Contents
+==============================================================
+	1. =Structure
+	2. =Elements
+	3. =Header
+	4. =Navigation
+	5. =Content
+	6. =Footer
+	7. =Media Queries
+*/
+
+/* =Structure
+--------------------------------------------------------------*/
+body {
+	font-size: 16px;
+	line-height: 26px;
+}
+.wrapper {
+	max-width: 1000px;
+	margin: auto;
+}
+
+/* =Elements
+--------------------------------------------------------------*/
+img {
+	max-width: 100%;
+	height: auto;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0 0 26px;
+}
+p {
+	margin-bottom: 26px;
+}
+p:last-child {
+	margin-bottom: 0;
+}
+
+/* =Header
+--------------------------------------------------------------*/
+.site-header {
+	padding: 40px;
+	text-align: center;
+	background-color: #ddd;
+}
+.site-title {
+	margin: 0;
+}
+
+/* =Navigation
+--------------------------------------------------------------*/
+.site-navigation {
+	background-color: #333;
+}
+.site-navigation ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.site-navigation li {
+	display: inline-block;
+}
+.site-navigation a {
+	display: block;
+	text-decoration: none;
+	font-weight: 700;
+	color: #fff;
+	font-size: 20px;
+	padding: 10px 20px 10px 0;
+}
+.site-navigation a:hover {
+	color: #4cacbe;
+}
+
+/* =Content
+--------------------------------------------------------------*/
+.content-wrapper {
+	padding: 40px;
+}
+.site-content {
+	padding-bottom: 40px;
+	border-bottom: 1px dotted #999;
+}
+.sidebar {
+	padding-top: 40px;
+	font-size: 13px;
+	line-height: 21px;
+	text-align: center;
+}
+.widget {
+	padding-bottom: 20px;
+}
+
+/* =Footer
+--------------------------------------------------------------*/
+.site-footer {
+	background-color: #333;
+	color: white;
+	overflow: hidden;
+	padding: 40px;
+}
+
+/* =Media Queries
+--------------------------------------------------------------*/
+@media screen and (min-width: 800px) {
+
+	/* =Content */
+	.site-content {
+		width: 70%;
+		float: left;
+		border: none;
+	}
+	.sidebar {
+		width: 30%;
+		float: left;
+		padding-top: 0;
+		text-align: left;
+	}
+	.widget {
+		padding-left: 20px;
+	}
+
+	/* =Footer */
+	.site-footer {
+		clear: both;
+	}
+	.site-footer .column {
+		width: 32%;
+		float: left;
+		padding-right: 2%;
+	}
+	.site-footer .column.last {
+		padding-right: 0;
+	}
+}
+
+/* Crafted with love at Sparkbox */
