@@ -60,7 +60,7 @@ p:last-child {
 .site-navigation ul {
   list-style-type: none;
   margin: 0;
-  padding: 0
+  padding: 10px;
 }
 .site-navigation li {
   display: inline-block;
