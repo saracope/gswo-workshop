@@ -113,6 +113,8 @@ blockquote {
 }
 .about-content {
   padding: 60px 0;
+  background-image: url(images/about-background.png);
+  background-repeat: no-repeat;
 }
 .about-beyonce-image {
   padding: 20px;
