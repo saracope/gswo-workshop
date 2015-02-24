@@ -19,6 +19,7 @@ Contents
 body {
   font-size: 16px;
   line-height: 26px;
+  font-family: 'Roboto', sans-serif;
 }
 .wrapper {
   max-width: 1000px;
@@ -28,11 +29,14 @@ body {
 /* =Elements
 --------------------------------------------------------------*/
 img {
+  display: block;
   max-width: 100%;
   height: auto;
+  margin: 0 auto;
 }
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 26px;
+  font-family: 'Oswald', sans-serif;
 }
 p {
   margin-bottom: 26px;
@@ -40,15 +44,27 @@ p {
 p:last-child {
   margin-bottom: 0;
 }
+ul {
+  padding-left: 0;
+}
+blockquote {
+  font-family: 'Oswald', sans-serif;
+  font-size: 26px;
+  text-align: center;
+}
 
 /* =Header
 --------------------------------------------------------------*/
 .site-header {
-  padding: 40px;
+  padding: 40px 40px 60px;
   text-align: center;
+  background-color: #363636;
 }
 .site-title {
   margin: 0;
+  color: #e9bbd7;
+  text-transform: uppercase;
+  font-size: 48px;
 }
 
 /* =Navigation
@@ -56,7 +72,7 @@ p:last-child {
 .site-navigation ul {
   list-style-type: none;
   margin: 0;
-  padding: 10px;
+  padding: 10px 10px 0;
 }
 .site-navigation li {
   display: inline-block;
@@ -64,13 +80,17 @@ p:last-child {
 .site-navigation a {
   display: block;
   text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
   font-weight: 700;
-  color: #000;
+  color: #e9bbd7;
   font-size: 20px;
-  padding: 0 20px;
+  margin: 0 20px;
+  border-bottom: #e9bbd7 2px solid;
 }
 .site-navigation a:hover {
-  color: #4cacbe;
+  color: #fff;
+  border-bottom: #fff 2px solid;
 }
 
 /* =Content
@@ -79,16 +99,102 @@ p:last-child {
   padding: 40px;
 }
 .site-content {
+  overflow: hidden;
+}
+.hero-image {
 
+}
+#about, #tour-dates {
+  text-transform: uppercase;
+  text-align: center;
+}
+#about {
+  display: none;
+}
+.about-content {
+  padding: 60px 0;
+  background-image: url(images/about-background.png);
+  background-repeat: no-repeat;
+}
+.about-beyonce-image {
+  padding: 20px;
+}
+.about-beyonce {
+  line-height: 30px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+#tour-dates {
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+.tour-content {
+  background-color: #363636;
+  color: #fff;
+  padding: 60px 0;
+}
+.tour-content-wrapper {
+  max-width: 500px;
+}
+.tour-dates-list li {
+  text-transform: uppercase;
+  list-style: none;
+  margin: 20px 0;
+  color: #e9bbd7;
+}
+.tour-dates-list span {
+  color: #fff;
+  padding: 0 20px;
 }
 
 /* =Footer
 --------------------------------------------------------------*/
 .site-footer {
-  background-color: #333;
-  color: white;
+  background-color: #fff;
+  color: #000;
   overflow: hidden;
   padding: 40px;
+}
+.footer-list {
+  overflow: hidden;
+  text-align: right;
+}
+.footer-list li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 0 10px;
+}
+.footer-list li:first-child {
+  font-family: 'Oswald', sans-serif;
+  float: left;
+  text-transform: lowercase;
+  font-size: 26px;
+}
+.footer-list li:first-child a {
+  color: #000;
+  float: left;
+}
+.footer-list a {
+  text-align: left;
+}
+.facebook a {
+  padding-left: 10px;
+  background-image: url(images/facebook.png);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  display: block;
+  text-indent: -9999em;
+}
+.twitter a {
+  padding-left: 10px;
+  background-image: url(images/twitter.png);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  display: block;
+  text-indent: -9999em;
+}
+.copyright {
+ padding-top: 30px;
 }
 
 /* =Media Queries
@@ -104,12 +210,22 @@ p:last-child {
     float: right;
   }
   .site-navigation a {
-    padding: 0 0 0 20px;
+    margin: 0 0 0 20px;
   }
 
   /* =Content */
   .site-content {
     border: none;
+  }
+  .about-beyonce-image {
+    float: left;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+  .about-beyonce {
+    text-align: left;
+    padding: 0 20px;
+    font-size: 20px;
   }
 
   /* =Footer */
@@ -125,5 +241,7 @@ p:last-child {
     padding-right: 0;
   }
 }
+
+/* This site is for educational purposes in connection with the Girl Scouts of the USA. All image rights are retained solely by the original sources. */
 
 /* Crafted with love at Sparkbox */
