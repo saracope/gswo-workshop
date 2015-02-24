@@ -1,6 +1,6 @@
 /*
-  Website Name: One Column Layout
-  Description: A one column layout for a website.
+  Website Name: Full Width Layout
+  Description: A full width layout with a sidebar for a website.
   Author(s): Your Name(s)...
 
 Contents
@@ -17,16 +17,12 @@ Contents
 /* =Structure
 --------------------------------------------------------------*/
 body {
-  background-color: #ddd;
-  padding: 40px;
   font-size: 16px;
   line-height: 26px;
 }
-.site {
-  background-color: white;
+.wrapper {
   max-width: 1000px;
   margin: auto;
-  overflow: hidden;
 }
 
 /* =Elements
@@ -79,8 +75,11 @@ p:last-child {
 
 /* =Content
 --------------------------------------------------------------*/
-.site-content {
+.content-wrapper {
   padding: 40px;
+}
+.site-content {
+
 }
 
 /* =Footer
@@ -108,7 +107,15 @@ p:last-child {
     padding: 0 0 0 20px;
   }
 
+  /* =Content */
+  .site-content {
+    border: none;
+  }
+
   /* =Footer */
+  .site-footer {
+    clear: both;
+  }
   .site-footer .column {
     width: 32%;
     float: left;
