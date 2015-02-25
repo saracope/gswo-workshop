@@ -118,6 +118,7 @@ blockquote {
 }
 .about-beyonce-image {
   padding: 20px;
+  box-sizing: border-box;
 }
 .about-beyonce {
   line-height: 30px;
