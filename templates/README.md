@@ -9,7 +9,7 @@ One Column Layout
 ![One Column Layout Screenshot](screenshots/one-column.jpg)
 
 * [View Source Files](one-column/)
-* [Download Zipped Files](one-column/one-column.zip)
+* [Download Zipped Files](downloads/one-column.zip)
 
 Right Sidebar Layout
 --------------------
@@ -19,7 +19,7 @@ Right Sidebar Layout
 ![Right Sidebar Layout Screenshot](screenshots/right-sidebar.jpg)
 
 * [View Source Files](right-sidebar/)
-* [Download Zipped Files](right-sidebar/right-sidebar.zip)
+* [Download Zipped Files](downloads/right-sidebar.zip)
 
 Full Width Layout
 -----------------
@@ -29,4 +29,4 @@ Full Width Layout
 ![Full Width Layout Screenshot](screenshots/full-width.jpg)
 
 * [View Source Files](full-width/)
-* [Download Zipped Files](full-width/full-width.zip)
+* [Download Zipped Files](downloads/full-width.zip)
