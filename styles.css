@@ -20,7 +20,7 @@ Contents
 body {
   background-color: #ddd;
   padding: 40px;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 26px;
 }
 .site {
@@ -28,10 +28,14 @@ body {
   max-width: 1000px;
   margin: auto;
   overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,.25);
 }
 .hero {
-  height: 400px;
+  height: 100px;
   background-image: url(images/gs-pattern.png);
+}
+.home .hero {
+  height: 400px;
 }
 
 /* =Elements
@@ -39,15 +43,31 @@ body {
 img {
   max-width: 100%;
   height: auto;
+  border: none;
+  display: block;
+  margin-bottom: 20px;
+  /*box-shadow: 0 0 10px rgba(0,0,0,.5);*/
+  border: 2px dashed #ddd;
 }
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 26px;
   font-family: 'Montserrat', sans-serif;
 }
+ul {
+ list-style-image: url(images/arrow-icon.png)
+}
+.link-list {
+  list-style-image: url(images/link-icon.png);
+  padding-left: 10px;
+  margin-top: 0;
+}
+li {
+  margin-bottom: 10px;
+}
 p {
   margin-bottom: 26px;
 }
-p:last-child {
+p:last-child, ul:last-child {
   margin-bottom: 0;
 }
 
@@ -61,9 +81,14 @@ p:last-child {
 .site-title {
   margin: 0;
   float: left;
+}
+.site-title a {
+  display: block;
   height: 63px;
   display: block;
   width: 173px;
+  max-width: 100%;
+  background-size: cover;
   overflow: hidden;
   text-indent: -9999px;
   background-image: url(images/sparkbox-gswo.png);
@@ -78,6 +103,7 @@ p:last-child {
 }
 .site-navigation li {
   display: inline-block;
+  margin-bottom: 0;
 }
 .site-navigation a {
   display: block;
@@ -109,23 +135,21 @@ p:last-child {
 .site-content h3 {
   text-transform: uppercase;
 }
+.site-content a {
+  color: #4cacbe;
+  text-decoration: none;
+}
+.site-content a:hover {
+  color: black;
+}
 
 /* Workshop Section */
 .workshop-resources {
-  padding: 20px 40px;
+  padding: 30px 40px 10px;
   margin-bottom: 40px;
   border: 2px dashed #00929a;
 }
-.workshop-resources ul {
-  margin-bottom: 0;
-  list-style-position: inside;
-  column-count: 2;
-  column-gap: 20px;
-  -moz-column-count: 2;
-  -moz-column-gap: 20px;
-  -webkit-column-count: 2;
-  -webkit-column-gap: 20px;
-}
+
 /* Resources Section */
 .resources-content {
   color: white;
@@ -142,11 +166,6 @@ p:last-child {
 .resources-content a:hover {
   color: black;
 }
-.resources-content ul {
-  list-style-image: url(images/link-icon.png);
-  padding-left: 10px;
-  margin-top: 0;
-}
 
 /* =Footer
 --------------------------------------------------------------*/
@@ -156,7 +175,7 @@ p:last-child {
   overflow: hidden;
   padding: 40px;
   clear: both;
-  font-size: 12px;
+  font-size: 14px;
 }
 .site-footer a {
   color: white;
@@ -165,6 +184,20 @@ p:last-child {
 
 /* =Media Queries
 --------------------------------------------------------------*/
+@media screen and (min-width: 675px) {
+  /* =Content */
+  .workshop-resources ul {
+    margin-bottom: 0;
+    list-style-position: inside;
+    column-count: 2;
+    column-gap: 20px;
+    -moz-column-count: 2;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 20px;
+  }
+}
+
 @media screen and (min-width: 800px) {
   /* =Header */
   .site-title {
