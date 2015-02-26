@@ -33,9 +33,16 @@ body {
 .hero {
   height: 100px;
   background-image: url(images/gs-pattern.png);
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  text-shadow: -5px 5px 0 #00929a;
+  text-align: center;
+  font-size: 30px;
+  line-height: 40px;
 }
 .home .hero {
-  height: 400px;
+  height: auto;
+  padding: 20px;
 }
 
 /* =Elements
@@ -51,7 +58,6 @@ img {
 }
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 26px;
-  font-family: 'Montserrat', sans-serif;
 }
 ul {
  list-style-image: url(images/arrow-icon.png)
@@ -216,6 +222,15 @@ p:last-child, ul:last-child {
 /* =Media Queries
 --------------------------------------------------------------*/
 @media screen and (min-width: 675px) {
+  /* =Content */
+  .hero {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .home .hero {
+    padding: 30px;
+  }
+
   /* =Header */
   .site-title {
     float: left;
@@ -265,7 +280,17 @@ p:last-child, ul:last-child {
   .column.last {
     padding-right: 0;
   }
+}
 
+@media screen and (min-width: 900px) {
+   /* =Structure */
+  .hero {
+    font-size: 60px;
+    line-height: 150px;
+  }
+  .home .hero {
+    padding: 60px;
+  }
 }
 
 /* Crafted with love at Sparkbox */
