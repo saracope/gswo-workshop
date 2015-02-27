@@ -109,7 +109,7 @@ blockquote {
   text-align: center;
 }
 #about {
-  display: none;
+  visibility: hidden;
 }
 .about-content {
   padding: 60px 0;
