@@ -198,6 +198,28 @@ blockquote {
  padding-top: 30px;
 }
 
+/* Image Credits */
+.credits-title {
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 0;
+  display: inline-block;
+}
+.credits-list {
+  font-size: 12px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+.credits-list li {
+  display: inline-block;
+  padding: 0;
+}
+.credits-list a {
+  color: #999;
+}
+
 /* =Media Queries
 --------------------------------------------------------------*/
 @media screen and (min-width: 800px) {
