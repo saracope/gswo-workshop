@@ -60,7 +60,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 26px;
 }
 ul {
- list-style-image: url(images/arrow-icon.png)
+ list-style-image: url(images/arrow-icon.png);
 }
 .link-list {
   list-style-image: url(images/link-icon.png);
@@ -108,7 +108,6 @@ p:last-child, ul:last-child {
 .site-title {
   margin: 0 auto;
   max-width: 173px;
-  /*float: left;*/
 }
 .site-title a {
   display: block;
@@ -290,6 +289,87 @@ p:last-child, ul:last-child {
   }
   .home .hero {
     padding: 60px;
+  }
+}
+
+/* Print */
+@media print {
+ body, .resources-content, .site-footer {
+    background: none !important;
+    color: black;
+    font-size: 10pt;
+  }
+  a, .site-content a, .resources-content a, .site-footer a {
+    text-decoration: underline;
+    color: black;
+  }
+  .site {
+    clear: both !important;
+    display: block !important;
+    float: none !important;
+    max-width: 100%;
+    position: relative !important;
+  }
+  .site-header {
+    text-align: left;
+    position: relative;
+  }
+  .site-title {
+    float: none;
+    max-width: none;
+    color: black;
+    margin-bottom: 40pt;
+  }
+  .site-title a {
+    height: auto;
+    display: inline;
+    width: auto;
+    overflow: visible;
+    text-indent: 0;
+    background-image: none;
+    font-size: 20pt;
+    text-decoration: none;
+  }
+  h1, h2, h3, h4, h5, h6, .section-header {
+    color: black;
+    border: none;
+    margin: 0 0 10px 0;
+    line-height: 16pt;
+  }
+  .section-header {
+    font-size: 14pt;
+  }
+  ul, .link-list ul {
+    list-style-image: none !important;
+    list-style-type: square !important;
+    list-style-position: outside;
+  }
+  ol {
+    list-style: decimal;
+  }
+  ol li:before {
+    display: none;
+  }
+  li, .link-list li {
+    margin-bottom: 0;
+  }
+  .site-content {
+    padding: 0;
+    margin-bottom: 20pt;
+    width: auto;
+    height: auto !important;
+  }
+  .site-navigation, .hero {
+    display: none !important;
+  }
+  .workshop-resources {
+    padding: 0;
+    margin-bottom: 20pt;
+    border: none;
+  }
+  .site-footer {
+    padding: 20pt 0 0 0;
+    border-top: 1px dashed black;
   }
 }
 
