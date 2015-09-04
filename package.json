@@ -1,0 +1,22 @@
+{
+  "name": "gswo-workshop",
+  "version": "0.0.0",
+  "description": "GSWO Workshop =============",
+  "main": "index.js",
+  "scripts": {
+    "test": "true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sparkbox/gswo-workshop.git"
+  },
+  "author": "Sparkbox",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sparkbox/gswo-workshop/issues"
+  },
+  "homepage": "https://github.com/sparkbox/gswo-workshop",
+  "devDependencies": {
+    "divshot-cli": "^1.10.5"
+  }
+}
